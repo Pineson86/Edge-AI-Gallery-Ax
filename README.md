@@ -1,73 +1,72 @@
-# Google AI Edge Gallery ✨
+# Google AI Edge Gallery Accessibility Mod
+
+*Описание по-русски ниже.*
+
+---
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/google-ai-edge/gallery)](https://github.com/google-ai-edge/gallery/releases)
+
+This is a modification of the original [Google AI Edge Gallery](https://github.com/google-ai-edge/gallery) application. This version implements accessibility for TalkBack users.
+
+**Original App Description:**
 
 **Explore, Experience, and Evaluate the Future of On-Device Generative AI with Google AI Edge.**
 
 The Google AI Edge Gallery is an experimental app that puts the power of cutting-edge Generative AI models directly into your hands, running entirely on your Android *(available now)* and iOS *(coming soon)* devices. Dive into a world of creative and practical AI use cases, all running locally, without needing an internet connection once the model is loaded. Experiment with different models, chat, ask questions with images and audio clip, explore prompts, and more!
 
-Install the app today from Google Play
+## Build from Source
 
-<a href='https://play.google.com/store/apps/details?id=com.google.ai.edge.gallery'><img alt='Get it on Google Play' width="250" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+### Requirements
+*   Java Development Kit (JDK)
 
-For users without Google Play access, install the apk from the [**latest release**](https://github.com/google-ai-edge/gallery/releases/latest/)
+### Build Process
 
-> [!IMPORTANT]
-> You must uninstall all previous versions of the app before installing this one. Past versions will no longer be working and supported.
+The project includes a Gradle Wrapper, which will automatically download the correct Gradle version.
 
-<img width="480" alt="01" src="https://github.com/user-attachments/assets/2a60c8d0-ef4e-4040-a948-fa73f6a622b4" />
-<img width="480" alt="02" src="https://github.com/user-attachments/assets/d155d458-b822-415d-9252-7e825fe8c9c0" />
-<img width="480" alt="03" src="https://github.com/user-attachments/assets/1977af6f-ee7e-41b3-aac1-a642c66c0058" />
-<img width="480" alt="04" src="https://github.com/user-attachments/assets/a48be969-f57e-4497-9ecf-8feb35f2ba71" />
-<img width="480" alt="05" src="https://github.com/user-attachments/assets/2a9679ea-f191-4ffd-87db-6726f7c1057d" />
+1.  **Build the project:**
+    *   For macOS/Linux, run in your terminal:
+        ```shell
+        ./gradlew assembleDebug
+        ```
+    *   For Windows, run in your command prompt:
+        ```shell
+        gradlew.bat assembleDebug
+        ```
 
-## ✨ Core Features
+2.  **Find the APK:**
+    After a successful build, the `app-debug.apk` installation file will be located in the `app/build/outputs/apk/debug/` directory.
 
-*   **📱 Run Locally, Fully Offline:** Experience the magic of GenAI without an internet connection. All processing happens directly on your device.
-*   **🤖 Choose Your Model:** Easily switch between different models from Hugging Face and compare their performance.
-*   **🖼️ Ask Image:** Upload images and ask questions about them. Get descriptions, solve problems, or identify objects.
-*   **🎙️ Audio Scribe:** Transcribe an uploaded or recorded audio clip into text or translate it into another language.
-*   **✍️ Prompt Lab:** Summarize, rewrite, generate code, or use freeform prompts to explore single-turn LLM use cases.
-*   **💬 AI Chat:** Engage in multi-turn conversations.
-*   **📊 Performance Insights:** Real-time benchmarks (TTFT, decode speed, latency).
-*   **🧩 Bring Your Own Model:** Test your local LiteRT `.litermlm` models.
-*   **🔗 Developer Resources:** Quick links to model cards and source code.
+---
 
-## 🏁 Get Started in Minutes!
+# Google AI Edge Gallery Accessibility Mod (Описание по-русски)
 
-1. **Check OS Requirement**: Android 12 and up
-2.  **Download the App:**
-    - Install the app from [Google Play](https://play.google.com/store/apps/details?id=com.google.ai.edge.gallery).
-    - For users without Google Play access: install the apk from the [**latest release**](https://github.com/google-ai-edge/gallery/releases/latest/)
-3.  **Install & Explore:** For detailed installation instructions (including for corporate devices) and a full user guide, head over to our [**Project Wiki**](https://github.com/google-ai-edge/gallery/wiki)!
+Это модификация оригинального приложения [Google AI Edge Gallery](https://github.com/google-ai-edge/gallery). В этой версии реализована доступность для пользователей TalkBack.
 
-## 🛠️ Technology Highlights
+**Описание оригинального приложения:**
 
-*   **Google AI Edge:** Core APIs and tools for on-device ML.
-*   **LiteRT:** Lightweight runtime for optimized model execution.
-*   **LLM Inference API:** Powering on-device Large Language Models.
-*   **Hugging Face Integration:** For model discovery and download.
+**Исследуйте, испытайте и оцените будущее генеративного ИИ на устройствах с помощью Google AI Edge.**
 
-## ⌨️ Development
+Google AI Edge Gallery — это экспериментальное приложение, которое дает вам в руки всю мощь передовых моделей генеративного ИИ, работающих полностью на ваших устройствах Android *(доступно сейчас)* и iOS *(скоро)*. Погрузитесь в мир творческих и практических применений ИИ, которые работают локально и не требуют подключения к Интернету после загрузки модели. Экспериментируйте с различными моделями, общайтесь в чате, задавайте вопросы с помощью изображений и аудиоклипов, исследуйте подсказки и многое другое!
 
-Check out the [development notes](DEVELOPMENT.md) for instructions about how to build the app locally.
+## Сборка из исходного кода
 
-## 🤝 Feedback
+### Требования
+*   Java Development Kit (JDK)
 
-This is an **experimental Beta release**, and your input is crucial!
+### Процесс сборки
 
-*   🐞 **Found a bug?** [Report it here!](https://github.com/google-ai-edge/gallery/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBUG%5D)
-*   💡 **Have an idea?** [Suggest a feature!](https://github.com/google-ai-edge/gallery/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=%5BFEATURE%5D)
+Проект включает в себя Gradle Wrapper, который автоматически загрузит нужную версию Gradle.
 
-## 📄 License
+1.  **Соберите проект:**
+    *   Для macOS/Linux выполните в терминале:
+        ```shell
+        ./gradlew assembleDebug
+        ```
+    *   Для Windows выполните в командной строке:
+        ```shell
+        gradlew.bat assembleDebug
+        ```
 
-Licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for details.
-
-## 🔗 Useful Links
-
-*   [**Project Wiki (Detailed Guides)**](https://github.com/google-ai-edge/gallery/wiki)
-*   [Hugging Face LiteRT Community](https://huggingface.co/litert-community)
-*   [LLM Inference guide for Android](https://ai.google.dev/edge/mediapipe/solutions/genai/llm_inference/android)
-*   [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM)
-*   [Google AI Edge Documentation](https://ai.google.dev/edge)
+2.  **Найдите APK:**
+    После успешной сборки установочный файл `app-debug.apk` будет находиться в директории `app/build/outputs/apk/debug/`.
